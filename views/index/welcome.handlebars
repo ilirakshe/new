@@ -1,0 +1,16 @@
+<h2> Welcome {{user.firstName}} {{user.lastName}}</h2>
+<p>And here we go with StoryBooks 1.0.0</p>
+<p>Post your stories and read stories shared by others. You can use
+    this like a diary or notebook. Feel free and enjoy!
+
+</p>
+{{#if user}}
+
+<a class="btn waves-effect waves-light">Go to Dashboards!
+    <i class="material-icons right"></i>
+</a>
+
+{{else}}
+
+<a href="/auth/google" class="btn red darken-1"><i class="fa ga-google left"></i>Login with Google</a>
+{{/if}}
